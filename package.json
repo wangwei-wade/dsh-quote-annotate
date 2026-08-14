@@ -1,6 +1,6 @@
 {
   "name": "dsh-quote-annotate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "选区引用与锚点批注：在 DSH 会话中选中文字 → 批注 → 引用锚点 chip（点击跳回原文、悬停显示原文）→ 提交序列化为结构化引用块。",
   "keywords": ["dsh", "plugin", "quote", "annotate", "selection", "reference"],
   "license": "MIT",
