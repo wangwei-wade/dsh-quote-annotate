@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+<YOUR_REPO_URL>.git"
+    "url": "git+https://github.com/wangwei-wade/dsh-quote-annotate.git"
   },
   "dependencies": {
     "react": "^18.2.0"
