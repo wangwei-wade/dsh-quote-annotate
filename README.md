@@ -23,17 +23,26 @@ DSH 会话中的消息**无法被选中、引用和批注**：你想针对上文
 
 把下面这段话直接粘贴给 DSH 助手：
 
-> 请帮我安装 dsh-quote-annotate 插件：运行 `dsh plugin --profile web add dsh-quote-annotate`，然后重启一次 web 服务使插件生效（静态客户端插件在服务启动时加载，重启后或下次启动时生效）。
+> 请帮我安装 dsh-quote-annotate 插件：运行 `dsh plugin --profile web add github:wangwei-wade/dsh-quote-annotate`，
+> 然后重启一次 web 服务使插件生效（静态客户端插件在服务启动时加载，重启后或下次启动时生效）。
 
 手动安装（可选）：
 
 ```sh
-dsh plugin --profile web add dsh-quote-annotate   # 从 npm 安装
-dsh plugin --profile web add ./dsh-quote-annotate  # 或本地目录
-dsh --profile web --dump-config                    # 确认出现 # == dsh-quote-annotate 层
+dsh plugin --profile web add github:wangwei-wade/dsh-quote-annotate  # 从 GitHub 安装
+dsh --profile web --dump-config                                       # 确认出现 # == dsh-quote-annotate 层
 ```
 
+> npm 状态：`dsh-quote-annotate` 的 npm 发布待开通（npm 要求发布者开启 2FA，账号暂未绑定），开通后即可 `dsh plugin --profile web add dsh-quote-annotate`。
+
 要求：DSH Web 界面（官方 web profile 自带 `ui-input-trigger` 引用管线）；管线缺失时自动回退为纯文本引用插入。
+
+## 发布（维护者侧）
+
+```sh
+git push origin main                        # 推送源码
+git tag v0.1.0 && git push origin v0.1.0    # 打版本 tag
+```
 
 ## 说明
 
